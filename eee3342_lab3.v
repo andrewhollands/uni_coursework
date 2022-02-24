@@ -1,4 +1,4 @@
-//  3-bit binary adder design and simulation code
+//  3-bit binary adder design code
 module Full_Adder_1bit(
   input wire X,
   input wire Y,
@@ -22,6 +22,7 @@ module Part_1(
   Full_Adder_1bit FA3 (X[2], Y[2], C2, S[0], Cout);
 endmodule
 
+//  3-bit binary adder simulation code
 module Part_1_Sim(
   );
   reg [2:0] X_t;
@@ -52,4 +53,3 @@ module Part_1_Sim(
       end
     end
 endmodule
-    
