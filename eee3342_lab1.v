@@ -22,7 +22,7 @@ module Part_1_Sim(
     .Outp(Outp_t)
   );
   
-  inital begin
+  initial begin
     Inp_1_t = 1'b0;
     Inp_2_t = 1'b0;
   end
@@ -54,7 +54,7 @@ module Part_2_Sim(
     .Outp(Outp_t)
   );
   
-  inital begin
+  initial begin
     Inp_1_t = 1'b0;
     Inp_2_t = 1'b0;
   end
@@ -86,7 +86,7 @@ module Part_2_1_Sim(
     .Outp(Outp_t)
   );
   
-  inital begin
+  initial begin
     Inp_1_t = 1'b0;
     Inp_2_t = 1'b0;
   end
@@ -118,7 +118,7 @@ module Part_2_2_Sim(
     .Outp(Outp_t)
   );
   
-  inital begin
+  initial begin
     Inp_1_t = 1'b0;
     Inp_2_t = 1'b0;
   end
@@ -147,7 +147,7 @@ module Part_2_3_Sim(
     .Outp(Outp_t)
   );
   
-  inital begin
+  initial begin
     Inp_1_t = 1'b0;
   end
   always #10 Inp_1_t = ~Inp_1_t;
@@ -193,7 +193,7 @@ module Part_3_Sim(
     .Outp_5(Outp_5_t)
   );
   
-  inital begin
+  initial begin
     Inp_1_t = 1'b0;
     Inp_2_t = 1'b0;
   end
