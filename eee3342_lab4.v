@@ -38,8 +38,8 @@ module Multiplexer(
   output wire Y
   );
   mux_8to1 mux1(.D(D[7:0]), .S(S[2:0]), .Y(YY[0])),
-  mux_8to1 mux1(.D(D[15:8]), .S(S[2:0]), .Y(YY[1])),
-  mux_8to1 mux1(.D(YY), .S(S[3]), .Y(Y)),
+  mux_8to1 mux2(.D(D[15:8]), .S(S[2:0]), .Y(YY[1])),
+  mux_8to1 mux3(.D(YY), .S(S[3]), .Y(Y)),
 endmodule
 
 //  16-to-1 multiplexer simulation code
