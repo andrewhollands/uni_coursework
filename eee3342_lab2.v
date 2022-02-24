@@ -1,4 +1,4 @@
-//  Multi-function logic gate design and simulation code
+//  Multi-function logic gate design code
 module Part_1_1(
   input X,
   input Y,
@@ -10,6 +10,7 @@ module Part_1_1(
   assign F = (X & ~A & ~B) | (Y & ~A & B) | (~X & A & B) | (Y & A & ~B);
 endmodule
 
+//  Multi-function logic gate simulation code
 module Part_1_1_Sim(
   );
   reg X_t;
