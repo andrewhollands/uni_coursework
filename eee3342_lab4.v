@@ -41,3 +41,43 @@ module Multiplexer(
   mux_8to1 mux1(.D(D[15:8]), .S(S[2:0]), .Y(YY[1])),
   mux_8to1 mux1(.D(YY), .S(S[3]), .Y(Y)),
 endmodule
+
+//  16-to-1 multiplexer simulation code
+module Multiplexer_Sim(
+  );
+  reg [15:0] D;
+  reg [3:0] S;
+  wire Y;
+  
+  Multiplexer UUT(
+    .D(D),
+    .S(S),
+    .Y(Y)
+    );
+  
+    initial begin
+      D = 16'b0000000000000000;
+      S = 4'b0000;
+    end
+  
+    always #1 D[0] = ~D[0];
+    always #2 D[1] = ~D[1];
+    always #4 D[2] = ~D[2];
+    always #8 D[3] = ~D[3];
+    always #16 D[4] = ~D[4];
+    always #32 D[5] = ~D[5];
+    always #64 D[6] = ~D[6];
+    always #128 D[7] = ~D[7];
+    always #256 D[8] = ~D[8];
+    always #512 D[9] = ~D[9];
+    always #1024 D[10] = ~D[10];
+    always #2048 D[11] = ~D[11];
+    always #4096 D[12] = ~D[12];
+    always #8192 D[13] = ~D[13];
+    always #16384 D[14] = ~D[14];
+    always #32768 D[15] = ~D[15];
+    always #65536 S[0] = ~S[0];
+    always #131072 S[1] = ~S[1];
+    always #262144 S[2] = ~S[2];
+    always #524288 S[3] = ~S[3];
+endmodule
