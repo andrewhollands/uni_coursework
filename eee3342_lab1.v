@@ -1,4 +1,4 @@
-//  AND gate design and simulation code
+//  AND gate design code
 module Part_1(
   input wire Inp 1,
   input wire Inp 2,
@@ -8,6 +8,7 @@ module Part_1(
   assign Outp = Inp_1 & Inp_2;
 endmodule
 
+//  AND gate simulation code
 module Part_1_Sim(
   );
   reg Inp_1_t;
@@ -29,7 +30,7 @@ module Part_1_Sim(
   always #20 Inp_2_t = ~Inp_2_t;
 endmodule
 
-//  NAND design and simulation code
+//  NAND gate design code
 module Part_2(
   input wire Inp_1,
   input wire Inp_2,
@@ -39,6 +40,7 @@ module Part_2(
   assign Outp = ~(Inp_1 & Inp_2);
 endmodule
 
+//  NAND gate simulation code
 module Part_2_Sim(
   );
   reg Inp_1_t;
@@ -60,7 +62,7 @@ module Part_2_Sim(
   always #20 Inp_2_t = ~Inp_2_t;
 endmodule
 
-//  OR design and simulation code
+//  OR gate design code
 module Part_2_1(
   input wire Inp_1,
   input wire Inp_2,
@@ -70,6 +72,7 @@ module Part_2_1(
   assign Outp = Inp_1 | Inp_2;
 endmodule
 
+//  OR gate simulation code
 module Part_2_1_Sim(
   );
   reg Inp_1_t;
@@ -91,7 +94,7 @@ module Part_2_1_Sim(
   always #20 Inp_2_t = ~Inp_2_t;
 endmodule
 
-//  XOR design and simulation code
+//  XOR gate design code
 module Part_2_2(
   input wire Inp_1,
   input wire Inp_2,
@@ -101,6 +104,7 @@ module Part_2_2(
   assign Outp = Inp_1 ^ Inp_2;
 endmodule
 
+//  XOR gate simulation code
 module Part_2_2_Sim(
   );  
   reg Inp_1_t;
@@ -122,7 +126,7 @@ module Part_2_2_Sim(
   always #20 Inp_2_t = ~Inp_2_t;
 endmodule
 
-//  NOT design and simulation code
+//  NOT gate design code
 module Part_2_3(
   input wire Inp_1,
   output wire Outp
@@ -131,6 +135,7 @@ module Part_2_3(
   assign Outp = ~Inp_1;
 endmodule
 
+//  NOT gate simulation code
 module Part_2_3_Sim(
   );
   reg Inp_1_t;
@@ -148,7 +153,7 @@ module Part_2_3_Sim(
   always #10 Inp_1_t = ~Inp_1_t;
 endmodule
 
-//  Two-input, five-output circuit
+//  Two-input, five-output circuit design code
 module Part_3(
   input Inp_1,
   input Inp_2,
@@ -166,6 +171,7 @@ module Part_3(
   assign Outp_5 = Inp_1 ^ Inp_2;
 endmodule
 
+//  Two-input, five-output circuit simulation code
 module Part_3_Sim(
   );
   reg Inp_1_t;
