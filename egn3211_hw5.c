@@ -1,5 +1,3 @@
-//
-//  egn3211_hw5.c
 //  HW5
 //
 //  Created by Andrew Richard Hollands on 3/4/20.
