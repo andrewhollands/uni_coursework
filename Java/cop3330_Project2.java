@@ -37,7 +37,7 @@ abstract class Person{
     }
 }
 
-public class Project2 {
+public class cop3330_Project2 {
     public static void main(String[] args) {
         int input;
         DecimalFormat df = new DecimalFormat("0.00");
