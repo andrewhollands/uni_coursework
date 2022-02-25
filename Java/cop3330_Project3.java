@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.text.DecimalFormat;
 
-public class Project3 {
+public class cop3330_Project3 {
     public static void main(String[] args) {
         int input;
         DecimalFormat df = new DecimalFormat("0.00");
